@@ -6,14 +6,22 @@ import { Component } from '@angular/core';
   template: `
 
     <!-- ngFor directives -->
-    <ul>
+    <!-- <ul>
       <li *ngFor="let item of names;
                                     let i = index;
                                     let isFirst = first;
                                     let isLast = last;
                                     let isEven = even;
                                     let isOdd = odd;">{{i}}, {{item}}, {{isFirst}}, {{isLast}},{{isEven}},{{isOdd}}</li>
-    </ul>
+    </ul> -->
+
+    <!-- *ngIf -->
+    <div *ngIf="visible">ngif</div>
+    <div *ngIf="visible;else elseContent">merhaba</div>
+    <ng-template #elseContent>
+      içerik 2
+    </ng-template>
+
 
 
   `,
