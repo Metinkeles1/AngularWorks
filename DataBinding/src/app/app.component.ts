@@ -11,9 +11,12 @@ import { Component } from '@angular/core';
     <!-- <button (click)="btnClick()">Click</button> -->
 
     <!-- Two-Way Data Binding -->
+    <!-- <input type="text" [(ngModel)] = "name"><br><br>
     <input type="text" [(ngModel)] = "name"><br><br>
-    <input type="text" [(ngModel)] = "name"><br><br>
-    {{name}}
+    {{name}} -->
+
+    <!-- Attribute Binding -->
+    <button (click)="btnClick()" [disabled]="disabled">Click</button>
   `,
   styleUrls: ['./app.component.scss']
 })
@@ -25,4 +28,6 @@ export class AppComponent {
   btnClick() {
     alert("click");
   }
+
+  disabled: boolean = true;
 }
