@@ -16,13 +16,18 @@ import { Component } from '@angular/core';
     </ul> -->
 
     <!-- *ngIf -->
-    <div *ngIf="visible">ngif</div>
+    <!-- <div *ngIf="visible">ngif</div>
     <div *ngIf="visible;else elseContent">merhaba</div>
     <ng-template #elseContent>
       içerik 2
-    </ng-template>
+    </ng-template> -->
 
-
+    <!-- ngSwitch -->
+    <div [ngSwitch]="sayi">
+        <div *ngSwitchCase="1">sayi 1</div>
+        <div *ngSwitchCase="2">sayi 1</div>
+        <div *ngSwitchCDefault>hiçbiri</div>
+    </div>
 
   `,
   styleUrls: ['./app.component.scss']
