@@ -23,11 +23,13 @@ import { Component } from '@angular/core';
     </ng-template> -->
 
     <!-- ngSwitch -->
-    <div [ngSwitch]="sayi">
+    <!-- <div [ngSwitch]="sayi">
         <div *ngSwitchCase="1">sayi 1</div>
         <div *ngSwitchCase="2">sayi 1</div>
         <div *ngSwitchCDefault>hiçbiri</div>
-    </div>
+    </div> -->
+
+
 
   `,
   styleUrls: ['./app.component.scss']
