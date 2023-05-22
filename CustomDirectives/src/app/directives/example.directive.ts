@@ -1,4 +1,4 @@
-import { Directive, ElementRef, HostListener, Input, OnInit } from '@angular/core';
+import { Directive, ElementRef, HostBinding, HostListener, Input, OnInit } from '@angular/core';
 
 declare var $: any;
 
@@ -26,4 +26,7 @@ export class ExampleDirective implements OnInit {
   onClick() {
     alert("html nesnesi click edildi");
   }
+
+  @HostBinding("style.color")
+  writingColor: string = "red";
 }
