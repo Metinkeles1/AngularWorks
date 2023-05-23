@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-example',
@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   example
   `,
 })
-export class ExampleComponent {
+export class ExampleComponent implements OnChanges {
+  @Input() data: string;
+
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log("ngonchanges");
+  }
 
 }
