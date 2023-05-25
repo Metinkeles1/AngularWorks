@@ -18,7 +18,7 @@ export class AppComponent {
   constructor(private formBuilder: FormBuilder) {
     this.frm = formBuilder.group({
       name: ["default value"],
-      surname: ["", [Validators.required, Validators.minLength(3)]],
+      surname: ["", [Validators.required, Validators.minLength(4)]],
       email: [""],
       tel: [""]
     })
